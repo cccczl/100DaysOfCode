@@ -4,18 +4,23 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 
 ### Day 1 - Working with Variables in Python to Manage Data
 * [Solution: Band Name Generator](day01/.)
+* [案例: 乐队名称生成器](day01/.)
 
 ### Day 2 - Understanding Data Types and How to Manipulate Strings
 * [Solution: Tip Calculator](day02/.)
+* [案例: 小费计算器](day02/.)
 
 ### Day 3 - Control Flow and Logical Operators
 * [Solution: Treasure Island](day03/.)
+* [案例: 金银岛](day03/.)
 
 ### Day 4 - Randomisation and Python Lists
 * [Solution: Rock Paper Scissors](day04/.)
+* [案例: 石头剪刀布](day04/.)
 
 ### Day 5 - Python Loops
 * [Solution: Password Generator](day05/.)
+* [案例: 密码生成器](day05/.)
 
 ### Day 6 - Python Functions & Karel
 * [Solution: Reeborg's World: Hurdle 1](day06/ReeborgsWorldHurdle1.txt)
@@ -24,44 +29,57 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [Solution: Reeborg's World: Hurdle 4](day06/ReeborgsWorldHurdle4.txt)
 * [Solution: Reeborg's World: Maze](day06/ReeborgsWorldMaze.txt)
 
-### Day 7 - Hangman
+### Day 7 - 猜单词游戏
 * [Solution: Hangman](day07/.)
+* [案例: 猜单词游戏](day07/.)
 
 ### Day 8 - Function Parameters & Caesar Cipher
 * [Solution: Caesar Cipher](day08/.)
+* [案例: 凯撒密码](day08/.)
 
 ### Day 9 - Dictionaries, Nesting and the Secret Auction
 * [Solution: Secret Auction](day09/.)
+* [案例: 秘密拍卖](day09/.)
 
 ### Day 10 - Functions with Outputs
 * [Solution: Calculator](day10/.)
+* [案例: 计算器](day10/.)
 
 ### Day 11 - The Blackjack Capstone Project
 * [Solution: Blackjack](day11/.)
+* [案例: 21点](day11/.)
 
 ### Day 12 - Scope & Number Guessing Game
 * [Solution: Guess the Number](day12/.)
+* [案例: 猜数游戏](day12/.)
 
 ### Day 13 - Debugging: How to Find and Fix Errors in your Code
 * [Solution: Debugging](day13/.)
+* [案例: 调试](day13/.)
 
 ### Day 14 - Higher Lower Game Project
 * [Solution: Higher Lower Game](day14/.)
+* [案例: 高低博弈游戏](day14/.)
 
 ### Day 15 - Local Development Environment Setup & the Coffee Machine
 * [Solution: Coffee Machine](day15/.)
+* [案例: 咖啡机](day15/.)
 
 ### Day 16 - Object Oriented Programming (OOP)
 * [Solution: OOP Coffee Machine](day16/.)
+* [案例: 面向对象 咖啡机](day16/.)
 
 ### Day 17 - The Quiz Project & the Benefits of OOP
 * [Solution: Quiz](day17/.)
+* [案例: 测验](day17/.)
 
 ### Day 18 - Turtle & the Graphical User Interface (GUI)
 * [Solution: Hirst Painting](day18/.)
+* [案例: 赫斯特绘画](day18/.)
 
 ### Day 19 - Instances, State and Higher Order Functions
 * [Solution: Turtle Race](day19/.)
+* [案例: 海龟赛跑](day19/.)
 
 ### Day 20 - Build the Snake Game Part 1: Animation & Coordinates
 * [Solution: Snake Game Part 1](day20/.)
