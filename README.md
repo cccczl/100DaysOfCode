@@ -512,3 +512,11 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 
 ## License
 Licensed under the [European Union Public License 1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) or later.
+
+
+### 几个学习编程的小贴士：
+* 可以通过另一台电脑或手机平板，观看要点讲解，同时在你的电脑上练习编程。（仅仅看视频你不可能学会这项技能，必须像你玩滑板或者骑自行车一样练习）
+* 自己建一个，语法和规则的备忘录。它被我们日常编程时方便参考。
+* 建议在图书馆或者安静的环境中学习，图书馆中看见大家学习自己会更努力，安静的环境更便与思考（建议每半小时休息5分钟）
+* 动笔记录，是个好习惯，通过笔记录的方式将编码写在笔记本上。你可以使用康来尔笔记。左边为编码，右边代码解释，下面写学到的新概念。
+* 每次练习后都在记录上标注出来，你会发现学习内容逐渐减少，练习越来越多。（每阶段学习海报）
