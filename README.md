@@ -385,35 +385,130 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [Solution: Day 74 Notebook](day74/Day74.ipynb)
 
 ### Day 75 - Beautiful Plotly Charts & Analysing the Android App Store
+### Day 75 - 高级 - Plotly图标分析安卓市场
 * [Solution: Day 75 Notebook](day75/Day75.ipynb)
 
 ### Day 76 - Computation with NumPy and N-Dimensional Arrays
+### Day 76 - 高级 - 使用NumPy和N维数组计算
 * [Solution: Day 76 Notebook](day76/Day76.ipynb)
 
 ### Day 77 - Linear Regression and Data Visualisation with Seaborn
+### Day 77 - 高级 - Seaborn线性回归和数据可视化
 * [Solution: Day 77 Notebook](day77/Day77.ipynb)
 
 ### Day 78 - Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
+### Day 78 - 高级 - 使用Plotly,Matplotlib,Seaborn分析诺贝尔奖数据
 * [Solution: Day 78 Notebook](day78/Day78.ipynb)
 
 ### Day 79 - The Tragic Discovery of Handwashing: t-Tests & Distributions
+### Day 79 - 高级 - 洗手的悲剧性发现：t检验和分布
 * [Solution: Day 79 Notebook](day79/Day79.ipynb)
 
 ### Day 80 - Capstone Project - Predict House Prices
+### Day 80 - 高级 - 预测房价（核心项目）
 * [Solution: Day 80 Notebook](day80/Day80.ipynb)
 ---
 ### Day 81 - Professional Portfolio Project - Python Scripting
+### Day 81 - 综合项目 - Python Scripting
 * [Text to Morse Code Converter Project](day81/.)
+* [文本到摩尔斯电码转换器](day81/.)
 
 ### Day 82 - Professional Portfolio Project - Python Web Development
+### Day 82 - 综合项目 - Python web 开发
+* [Temporary Landing Page Project](day82/.)
 * [Temporary Landing Page Project](day82/.)
 * [Live Website](https://portfolio.bodon.dev/100DaysOfCodeDay82)
+* [直播网站](https://portfolio.bodon.dev/100DaysOfCodeDay82)
 
 ### Day 83 - Professional Portfolio Project - Python Scripting
+### Day 83 - 综合项目 - Python Scripting
 * [Tic Tac Toe Project](day83/.)
+* [井字游戏](day83/.)
+
+### Day 84 - Professional Portfolio Project - Python GUI
+### Day 84 - 综合项目 - Python gui
+* [Image Watermarking Desktop App](day84/.)
+* [图片水印软件](day84/.)
+
+### Day 85 - Professional Portfolio Project - Python GUI
+### Day 85 - 综合项目 - Python gui
+* [Typing Speed Test](day85/.)
+* [打字速度测试软件](day85/.)
+
+### Day 86 - Professional Portfolio Project - Python GAME
+### Day 86 - 综合项目 - Python 游戏
+* [Breakout Game](day86/.)
+* [突围游戏](day86/.)
+
+### Day 87 - Professional Portfolio Project - Python Web Development
+### Day 87 - 综合项目 - Python web开发
+* [Cafe and Wifi Website](day87/.)
+* [咖啡wifi网站](day87/.)
+
+### Day 88 - Professional Portfolio Project - Python Web Development
+### Day 88 - 综合项目 - Python web开发
+* [Todo List](day88/.)
+* [待办事项列表](day88/.)
+
+### Day 89 - Professional Portfolio Project - Python GUI Desktop App
+### Day 89 - 综合项目 - Python 桌面应用
+* [Disappearing Text Writing App](day89/.)
+* [消失的文字](day89/.)
+
+### Day 90 - Professional Portfolio Project - HTTTP Requests & APIs
+### Day 90 - 综合项目 - http请求和API
+* [Convert PDF to Audiobook](day90/.)
+* [pdf转语音](day90/.)
+
+### Day 91 - Professional Portfolio Project - lmageProcessing & Data Science
+### Day 91 - 综合项目 -图片处理和数据科学
+* [Image Colour Palette Generator](day91/.)
+* [图像调色板生成器](day91/.)
+
+### Day 92 - Professional Portfolio Project - web Scraping
+### Day 92 - 综合项目 - Python 网页抓取
+* [Custom Web Scraper](day92/.)
+* [自定义网络爬虫](day92/.)
+
+### Day 93 - Professional Portfolio Project - GUI Automation
+### Day 93 - 综合项目 - GUI自动化
+* [Automate the Google Dinosaur Game](day93/.)
+* [自动玩google恐龙游戏](day93/.)
+
+### Day 94 - Professional Portfolio Project - Python Game
+### Day 94 - 综合项目 - Python 游戏
+* [Space Invaders](day94/.)
+* [太空侵略者](day94/.)
+
+### Day 95 - Professional Portfolio Project - HTTTP Requests & APIs
+### Day 95 - 综合项目 - Python http请求和api
+* [Custom API Based Website](day95/.)
+* [基于自定义 API 的网站](day95/.)
+
+### Day 96 - Professional Portfolio Project - Web Development
+### Day 96 - 综合项目 - Python web应用
+* [An Online Shop](day96/.)
+* [网上商店](day96/.)
 
 ### Day 97 - Professional Portfolio Project - Python Automation
-* [Podcast Downloader/Uploader Project](day97/.)
+### Day 97 - 综合项目 - GUI自动化
+* [Custom Automation](day97/.)
+* [自定义自动化](day97/.)
+
+### Day 98 - Professional Portfolio Project - DataScience
+### Day 98 - 综合项目 - 数据科学
+* [Analyse and Visualise the Space Race](day98/.)
+* [分析和可视化太空竞赛](day98/.)
+
+### Day 99 - Professional Portfolio Project - DataScience
+### Day 99 - 综合项目 - 数据科学
+* [Analyse Deaths involving Police in the United States](day99/.)
+* [分析涉及美国警察的死亡事件](day99/.)
+
+### Day 100 - Professional Portfolio Project - DataScience
+### Day 100 - 综合项目 - 数据科学
+* [使用多元回归预测收益](day100/.)
+* [自定义自动化](day100/.)
 
 ## License
 Licensed under the [European Union Public License 1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) or later.
