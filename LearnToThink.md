@@ -66,3 +66,10 @@ Build Your Own Public API
 Data Science with Google Trends
 Analysing Lego Datasets
 Google App Store Analysis
+
+### 工具的使用
+初级练习我们使用工具Thonny
+初级交换练习，使用Jupyter Notebook
+
+中级我们使用的工具为vscode
+中级交换练习，使用vscode+Jupyter Notebook
