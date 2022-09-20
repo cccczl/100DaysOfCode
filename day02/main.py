@@ -1,4 +1,5 @@
 # Tip Calculator
+#小费计算器
 
 # initialize the variables as empty strings, since input() returns strings
 base_bill = ""
