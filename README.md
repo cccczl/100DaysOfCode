@@ -179,21 +179,30 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [案例: SMS短信下雨通知](day35/.)
 
 ### Day 36 - Stock Trading News Alert Project
+### Day 36 - 中级 - 股票交易新闻报警项目
 * [Solution: SMS Stock News](day36/.)
+* [案例: 股票新闻SMS短信通知](day36/.)
 
 ### Day 37 - Habit Tracking Project: API Post Requests & Headers
+### Day 37 - 中级 - 订阅项目：API发布请求和报头
 * [Solution: Habit Tracking](day37/.)
+* [案例: 订阅项目](day37/.)
 * [Pixela Graph](https://pixe.la/v1/users/tomi/graphs/graph1.html)
+* [像素图](https://pixe.la/v1/users/tomi/graphs/graph1.html)
 
-### Day 38 - Workout Tracking Using Google Sheets
+### Day 38 - 订阅google表格的内容
 * [Solution: Exercise Tracking](day38/.)
+* [案例: 动态订阅](day38/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/16VI8oiRoGZtoiZhTpt8w6fBxzo9gjsMbazgU3rPslvA/edit?usp=sharing)
+* [Google 表格电子表格](https://docs.google.com/spreadsheets/d/16VI8oiRoGZtoiZhTpt8w6fBxzo9gjsMbazgU3rPslvA/edit?usp=sharing)
 
 ### Day 39 - Capstone Part 1: Flight Deal Finder
+### Day 39 - 第一部分：航班信息订阅（核心项目）
 * [Solution: Flight Deal Finder](day39/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/1LvvQmQgI5E7nmIlH7NBpUqWiacESjh4TBvXCn0Z-SWU/edit?usp=sharing)
 
 ### Day 40 - Capstone Part 2: Flight Club
+### Day 40 - 第二部分：航班信息订阅（核心项目）
 * [Solution: Flight Club](day40/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/1LvvQmQgI5E7nmIlH7NBpUqWiacESjh4TBvXCn0Z-SWU/edit#gid=1881580289)
 
