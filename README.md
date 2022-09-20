@@ -3,81 +3,100 @@
 My solutions for the projects included in the [Python course by Dr. Angela Yu](https://www.udemy.com/course/100-days-of-code/).
 
 ### Day 1 - Working with Variables in Python to Manage Data
+### Day 1 - 初学者 - 使用python中的变量来管理数据 
 * [Solution: Band Name Generator](day01/.)
 * [案例: 乐队名称生成器](day01/.)
 
 ### Day 2 - Understanding Data Types and How to Manipulate Strings
+### Day 2 - 初学者 - 了解数据类型以及如何操作字符串
 * [Solution: Tip Calculator](day02/.)
 * [案例: 小费计算器](day02/.)
 
 ### Day 3 - Control Flow and Logical Operators
+### Day 3 - 初学者 - 流程控制和逻辑运算符
 * [Solution: Treasure Island](day03/.)
 * [案例: 金银岛](day03/.)
 
 ### Day 4 - Randomisation and Python Lists
+### Day 4 - 初学者 - 随机模块和列表的使用
 * [Solution: Rock Paper Scissors](day04/.)
 * [案例: 石头剪刀布](day04/.)
 
 ### Day 5 - Python Loops
+### Day 5 - 初学者 - 循环
 * [Solution: Password Generator](day05/.)
 * [案例: 密码生成器](day05/.)
 
 ### Day 6 - Python Functions & Karel
+### Day 6 - 初学者 - 函数
 * [Solution: Reeborg's World: Hurdle 1](day06/ReeborgsWorldHurdle1.txt)
 * [Solution: Reeborg's World: Hurdle 2](day06/ReeborgsWorldHurdle2.txt)
 * [Solution: Reeborg's World: Hurdle 3](day06/ReeborgsWorldHurdle3.txt)
 * [Solution: Reeborg's World: Hurdle 4](day06/ReeborgsWorldHurdle4.txt)
 * [Solution: Reeborg's World: Maze](day06/ReeborgsWorldMaze.txt)
 
-### Day 7 - 猜单词游戏
+### Day 7 - Hangman
+### Day 7 - 初学者 - 猜单词游戏
 * [Solution: Hangman](day07/.)
 * [案例: 猜单词游戏](day07/.)
 
 ### Day 8 - Function Parameters & Caesar Cipher
+### Day 8 - 初学者 - 带参数的函数和凯撒密码
 * [Solution: Caesar Cipher](day08/.)
 * [案例: 凯撒密码](day08/.)
 
 ### Day 9 - Dictionaries, Nesting and the Secret Auction
+### Day 9 - 初学者 - 字典和嵌套
 * [Solution: Secret Auction](day09/.)
 * [案例: 秘密拍卖](day09/.)
 
 ### Day 10 - Functions with Outputs
+### Day 10 - 初学者 - 有返回值的函数
 * [Solution: Calculator](day10/.)
 * [案例: 计算器](day10/.)
 
 ### Day 11 - The Blackjack Capstone Project
+### Day 11 - 初学者 - 21点游戏
 * [Solution: Blackjack](day11/.)
 * [案例: 21点](day11/.)
 
 ### Day 12 - Scope & Number Guessing Game
+### Day 12 - 初学者 - 作用域和猜数游戏
 * [Solution: Guess the Number](day12/.)
 * [案例: 猜数游戏](day12/.)
 
 ### Day 13 - Debugging: How to Find and Fix Errors in your Code
+### Day 13 - 初学者 - 调试：如何查找和修复代码错误
 * [Solution: Debugging](day13/.)
 * [案例: 调试](day13/.)
 
 ### Day 14 - Higher Lower Game Project
+### Day 14 - 初学者 - 高低博弈游戏
 * [Solution: Higher Lower Game](day14/.)
 * [案例: 高低博弈游戏](day14/.)
 
 ### Day 15 - Local Development Environment Setup & the Coffee Machine
+### Day 15 - 中级 - 本地环境配置和咖啡机程序
 * [Solution: Coffee Machine](day15/.)
 * [案例: 咖啡机](day15/.)
 
 ### Day 16 - Object Oriented Programming (OOP)
+### Day 16 - 中级 - 面向对象编程
 * [Solution: OOP Coffee Machine](day16/.)
 * [案例: 面向对象 咖啡机](day16/.)
 
 ### Day 17 - The Quiz Project & the Benefits of OOP
+### Day 17 - 中级 - 测试项目和面对对象的好处
 * [Solution: Quiz](day17/.)
 * [案例: 测验](day17/.)
 
 ### Day 18 - Turtle & the Graphical User Interface (GUI)
+### Day 18 - 中级 - 海龟和图形化界面（gui）
 * [Solution: Hirst Painting](day18/.)
 * [案例: 赫斯特绘画](day18/.)
 
 ### Day 19 - Instances, State and Higher Order Functions
+### Day 19 - 中级 - 实例，状态和高阶函数
 * [Solution: Turtle Race](day19/.)
 * [案例: 海龟赛跑](day19/.)
 
