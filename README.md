@@ -56,7 +56,7 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [案例: 计算器](day10/.)
 
 ### Day 11 - The Blackjack Capstone Project
-### Day 11 - 初学者 - 21点游戏
+### Day 11 - 初学者 - 21点游戏（核心项目）
 * [Solution: Blackjack](day11/.)
 * [案例: 21点](day11/.)
 
@@ -101,52 +101,82 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [案例: 海龟赛跑](day19/.)
 
 ### Day 20 - Build the Snake Game Part 1: Animation & Coordinates
+### Day 20 - 中级 - 构建贪吃蛇游戏第一部分：动画和坐标
 * [Solution: Snake Game Part 1](day20/.)
+* [案例: 贪吃蛇 第1部分](day20/.)
 
 ### Day 21 - Build the Snake Game Part 2: Inheritance & List Slicing
+### Day 21 - 中级 - 构建贪吃蛇游戏第二部分：继承和列表切片
 * [Solution: Snake Game Part 2](day21/.)
+* [案例: 贪吃蛇 第2部分](day21/.)
 
 ### Day 22 - Build Pong: The Famous Arcade Game
+### Day 22 - 中级 - 乒乓球游戏
 * [Solution: Pong](day22/.)
+* [案例: 乒乓球](day22/.)
 
 ### Day 23 - The Turtle Crossing Capstone Project
-* [Solution: Turtle Crossing](day23/.)
+### Day 23 - 中级 - 海龟穿越顶点（核心项目）
+* [Solution: 海龟穿越](day23/.)
 
 ### Day 24 - Files, Directories and Paths
+### Day 24 - 中级 - 文件，目录和路径
 * [Solution: Mail Merge](day24/.)
+* [案例: 邮件合并管理](day24/.)
 
 ### Day 25 - Working with CSV Data and the Pandas Library
+### Day 25 - 中级 - csv数据和pandas库
 * [Solution: U.S. States Game](day25/.)
+* [案例: 州名标志游戏](day25/.)
 
 ### Day 26 - List Comprehension and the NATO Alphabet
+### Day 26 - 中级 - 列表的理解
 * [Solution: NATO Alphabet](day26/.)
+* [案例: 字母助记游戏](day26/.)
 
 ### Day 27 - Tkinter, *args, **kwargs and Creating GUI Programs
+### Day 27 - 中级 - Tkinter, *args, **kwargs和创建图形界面
 * [Solution: Mile to Kilometers Converter](day27/.)
+* [案例: 英里到公里转换器](day27/.)
 
 ### Day 28 - Tkinter, Dynamic Typing and the Pomodoro GUI Application
+### Day 28 - 中级 - Tkinter, 动态数据, 番茄工作法图形界面
 * [Solution: Pomodoro](day28/.)
+* [案例: 番茄工作法项目实现](day28/.)
 
 ### Day 29 - Building a Password Manager GUI App with Tkinter
+### Day 29 - 中级 - Tkinter构建密码管理器
 * [Solution: Password Manager](day29/.)
+* [案例: 密码管理器](day29/.)
 
 ### Day 30 - Errors, Exceptions and JSON Data: Improving the Password Manager
+### Day 30 - 中级 - 错误, 异常和使用JSON: 改进密码管理器
 * [Solution: Password Manager Improved](day30/.)
+* [案例: 密码管理器改进版](day30/.)
 
 ### Day 31 - Flash Card App Capstone Project
+### Day 31 - 中级 - 瞬间记忆游戏（核心项目）
 * [Solution: Flash Card App](day31/.)
+* [案例: 瞬间记忆游戏](day31/.)
 
 ### Day 32 - Send Email (smtplib) & Manage Dates (datetime)
+### Day 32 - 中级 - 发送邮件（smtplib）和日期管理（datatime）
 * [Solution: Automated Birthday Wisher](day32/.)
+* [案例: 自动发送生日贺卡](day32/.)
 
 ### Day 33 - API Endpoints & API Parameters - ISS Overhead Notifier
-* [Solution: ISS Overhead Notifier](day33/.)
+### Day 33 - 中级 - 应用程序接口 API终点和API参数
+* [Solution: ISS 数据订阅接口](day33/.)
 
 ### Day 34 - API Practice - Creating a GUI Quiz App
+### Day 34 - 中级 - API实践项目：图形界面考试程序
 * [Solution: Quizzler](day34/.)
+* [案例: 考试系统](day34/.)
 
 ### Day 35 - Keys, Authentication & Environment Variables: Send SMS
+### Day 35 - 中级 - 密钥，身份验证和环境变量：发送sms信息
 * [Solution: SMS Rain Alert](day35/.)
+* [案例: SMS短信下雨通知](day35/.)
 
 ### Day 36 - Stock Trading News Alert Project
 * [Solution: SMS Stock News](day36/.)
