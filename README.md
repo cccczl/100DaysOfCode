@@ -242,32 +242,51 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [案例: 音乐时光机](day46/.)
 
 ### Day 47 - Create an Automated Amazon Price Tracker
+### Day 47 - 中级 - 自动追踪亚马逊上商品价格
 * [Solution: Amazon Price Tracker](day47/.)
+* [案例: 亚马逊价格追踪器](day47/.)
 
 ### Day 48 - Selenium Webdriver Browser and Game Playing Bot
+### Day 48 - 中级 - 浏览器自动化和游戏机器人
 * [Solution: Cookie Clicker](day48/.)
+* [案例: Cookie点击器](day48/.)
 
 ### Day 49 - Automating Job Applications on LinkedIn
+### Day 49 - 中级 - 自动化申请LinkedIn上的工作
 * [Solution: Automated Job Application Bot](day49/.)
+* [案例: 自动求职机器人](day49/.)
 
 ### Day 50 - Auto Tinder Swiping Bot
+### Day 50 - 中级 - 自动点赞机器人
 * [Solution: Auto Tinder Swiper](day50/.)
+* [案例: 自动点赞](day50/.)
 
 ### Day 51 - Internet Speed Twitter Complaint Bot
+### Day 51 - 中级 - 自动Twitter发文机器人
 * [Solution: Internet Speed Twitter Bot](day51/.)
+* [案例: 自动Twitter发文机器人](day51/.)
 
 ### Day 52 - Instagram Follower Bot
+### Day 52 - 中级 - 自动Instagram关注机器人
 * [Solution: Instagram Follower Bot](day52/.)
+* [案例: Instagram Follower Bot](day52/.)
 
 ### Day 53 - Web Scraping Capstone - Data Entry Job Automation
+### Day 53 - 中级 - 数据输入自动抓取（爬虫核心项目）
 * [Solution: Zillow Rental Research](day53/.)
+* [案例: Zillow 出租信息爬取](day53/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/16w7MZFzsVSytvD05paYQ_jiEHN7DjY1oWfJhVUfMmb8/edit?usp=sharing)
+* [Google 表格电子表格](https://docs.google.com/spreadsheets/d/16w7MZFzsVSytvD05paYQ_jiEHN7DjY1oWfJhVUfMmb8/edit?usp=sharing)
 
 ### Day 54 - Introduction to Web Development with Flask
+### Day 54 - 中级 - flask web开发介绍
 * [Solution: Flask Quickstart](day54/.)
+* [案例: Flask快速入门](day54/.)
 
 ### Day 55 - HTML & URL Parsing in Flask and the Higher Lower Game
+### Day 55 - 中级 - HTML渲染和URL解析
 * [Solution: Flask Higher Lower Game](day55/.)
+* [案例: Flask 高低博弈游戏](day55/.)
 
 ### Day 56 - Rendering HTML/Static files and Using Website Templates
 * [Solution: Flask Name Card Website](day56/.)
