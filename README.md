@@ -373,12 +373,15 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [案例: 额外的学分](day71/Day71ExtraCredit.ipynb)
 
 ### Day 72 - Data Visualisation with Matplotlib: Programming Languages
+### Day 72 - 高级 - 使用Matplotlib对数据可视化：编程语言
 * [Solution: Day 72 Notebook](day72/Day72.ipynb)
 
 ### Day 73 - Aggregate & Merge Data with Pandas: Analyse the LEGO Dataset
+### Day 73 - 高级 - 使用Pandas聚合和合并数据：分析lego数据集
 * [Solution: Day 73 Notebook](day73/Day73.ipynb)
 
 ### Day 74 - Google Trends Data: Resampling and Visualising Time Series
+### Day 74 - 高级 - google趋势数据：重新采样和可视化
 * [Solution: Day 74 Notebook](day74/Day74.ipynb)
 
 ### Day 75 - Beautiful Plotly Charts & Analysing the Android App Store
