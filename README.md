@@ -190,39 +190,56 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [Pixela Graph](https://pixe.la/v1/users/tomi/graphs/graph1.html)
 * [像素图](https://pixe.la/v1/users/tomi/graphs/graph1.html)
 
-### Day 38 - 订阅google表格的内容
+### Day 38 - Workout Tracking Using
+### Day 38 - 中级 - 订阅google表格的内容
 * [Solution: Exercise Tracking](day38/.)
 * [案例: 动态订阅](day38/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/16VI8oiRoGZtoiZhTpt8w6fBxzo9gjsMbazgU3rPslvA/edit?usp=sharing)
 * [Google 表格电子表格](https://docs.google.com/spreadsheets/d/16VI8oiRoGZtoiZhTpt8w6fBxzo9gjsMbazgU3rPslvA/edit?usp=sharing)
 
 ### Day 39 - Capstone Part 1: Flight Deal Finder
-### Day 39 - 第一部分：航班信息订阅（核心项目）
+### Day 39 - 中级 - 第一部分：航班信息订阅（核心项目）
 * [Solution: Flight Deal Finder](day39/.)
+* [案例: 航班优惠信息订阅](day39/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/1LvvQmQgI5E7nmIlH7NBpUqWiacESjh4TBvXCn0Z-SWU/edit?usp=sharing)
+* [Google 表格电子表格](https://docs.google.com/spreadsheets/d/1LvvQmQgI5E7nmIlH7NBpUqWiacESjh4TBvXCn0Z-SWU/edit?usp=sharing)
 
 ### Day 40 - Capstone Part 2: Flight Club
-### Day 40 - 第二部分：航班信息订阅（核心项目）
+### Day 40 - 中级 - 第二部分：航班信息订阅（核心项目）
 * [Solution: Flight Club](day40/.)
+* [案例: 航班优惠信息订阅](day40/.)
 * [Google Sheets Spreadsheet](https://docs.google.com/spreadsheets/d/1LvvQmQgI5E7nmIlH7NBpUqWiacESjh4TBvXCn0Z-SWU/edit#gid=1881580289)
+* [Google 表格电子表格](https://docs.google.com/spreadsheets/d/1LvvQmQgI5E7nmIlH7NBpUqWiacESjh4TBvXCn0Z-SWU/edit#gid=1881580289)
 
 ### Day 41 - Web Foundation - Introduction to HTML
+### Day 41 - Web基础 - HTML介绍
 * [Solution: HTML - Personal Site](day41/.)
+* [案例: HTML - 个人网站](day41/.)
 
 ### Day 42 - Web Foundation - Intermediate HTML
+### Day 42 - Web基础 - HTML深入
 * [Solution: Forms and Tables in HTML](day42/.)
+* [案例: HTML表单和表格](day42/.)
 
 ### Day 43 - Web Foundation - Introduction to CSS
+### Day 43 - Web基础 - CSS介绍
 * [Solution: External CSS](day43/.)
+* [案例: 外部CSS](day43/.)
 
 ### Day 44 - Web Foundation - Intermediate CSS
+### Day 44 - Web基础 - CSS深入
 * [Solution: CSS - My Site](day44/.)
+* [案例: CSS 我的式样](day44/.)
 
 ### Day 45 - Web Scraping with Beautiful Soup
+### Day 45 - 中级 - 爬虫抓取网页
 * [Solution: Top 100 Movies](day45/.)
+* [案例: 排名前100电影](day45/.)
 
 ### Day 46 - Create a Spotify Playlist using the Musical Time Machine
+### Day 46 - 中级 - 创建音乐播放列表
 * [Solution: Musical Time Machine](day46/.)
+* [案例: 音乐时光机](day46/.)
 
 ### Day 47 - Create an Automated Amazon Price Tracker
 * [Solution: Amazon Price Tracker](day47/.)
