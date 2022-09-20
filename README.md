@@ -289,54 +289,88 @@ My solutions for the projects included in the [Python course by Dr. Angela Yu](h
 * [案例: Flask 高低博弈游戏](day55/.)
 
 ### Day 56 - Rendering HTML/Static files and Using Website Templates
+### Day 56 - 中级 - 模板，静态文件
 * [Solution: Flask Name Card Website](day56/.)
+* [案例: Flask 名片网站](day56/.)
 
 ### Day 57 - Templating with Jinja in Flask Applications
+### Day 57 - 中级 - Flask使用Jinja模板
 * [Solution: Blog Capstone Project Part 1](day57/.)
+* [案例: Blog （核心项目） 第1部分](day57/.)
 
 ### Day 58 - Web Foundation - Bootstrap
+### Day 58 - 中级 - Web 基础 - Bootstrap
 * [Solution: Flask TinDog](day58/.)
+* [案例: Flask TinDog](day58/.)
 
 ### Day 59 - Blog Capstone Project - Adding Styling
+### Day 59 - 中级 - Blog项目：添加样式（核心项目）
 * [Solution: Blog Capstone Project Part 2](day59/.)
+* [案例: Blog （核心项目） 第2部分](day59/.)
 
 ### Day 60 - Make POST Requests with Flask and HTML Forms
+### Day 60 - 高级 - 使用 Flask 和 HTML 表单发出 POST 请求
 * [Solution: Flask HTML Forms](day60/.)
+* [案例: Flask HTML表单](day60/.)
 
 ### Day 61 - Building Advanced Forms with Flask-WTForms
+### Day 61 - 高级 - 使用 Flask-WTForms构建高级表单
 * [Solution: Flask-WTF Forms](day61/.)
+* [案例: Flask-WTF 表单](day61/.)
 
 ### Day 62 - Flask, WTForms, Bootstrap and CSV - Coffee & Wi-Fi Project
+### Day 62 - 高级 - Flask, WTForms, Bootstrap 和 CSV - 咖啡wifi项目
 * [Solution: Coffee & Wi-Fi](day62/.)
+* [案例: 咖啡WiFi](day62/.)
 
 ### Day 63 - Databases and with SQLite and SQLAlchemy
+### Day 63 - 高级 - 数据库 sqllite和sqlalchemy
 * [Solution: Virtual Bookshelf](day63/.)
+* [案例: 虚拟书架](day63/.)
 
 ### Day 64 - My Top 10 Movies Website Project
+### Day 64 - 高级 - 我的前十电影排行
 * [Solution: My Top 10 Movies](day64/.)
+* [案例: 我的前十电影排行](day64/.)
 
 ### Day 65 - Web Design School - How to Create a Website that People will Love
+### Day 65 - 高级 - 设计学习：如何创建一个受欢迎的网站
 * [Solution: Coffee & Wi-Fi v1.1](day65/.)
+* [案例: 咖啡WiFi v1.1](day65/.)
 
 ### Day 66 - Building Your Own API with RESTful Routing
+### Day 66 - 高级 - 使用RESTful构建自己的API
 * [Solution: Cafe & Wifi API](day66/.)
+* [案例: 咖啡WiFi v1.1](day66/.)
 * [Postman Documentation](https://documenter.getpostman.com/view/14447538/TW73D58F)
+* [Postman 文档](https://documenter.getpostman.com/view/14447538/TW73D58F)
 
 ### Day 67 - Blog Capstone Project Part 3 - RESTful Routing
+### Day 67 - 高级 - Blog项目第三部分：RESTful 路由（核心项目）
 * [Solution: Blog Capstone Project Part 3](day67/.)
+* [案例: Blog （核心项目） 第3部分](day67/.)
 
 ### Day 68 - Authentication with Flask
+### Day 68 - 高级 - flask身份验证
 * [Solution: Flask Authentication](day68/.)
+* [案例: Flask 身份验证](day68/.)
 
 ### Day 69 - Blog Capstone Project Part 4 - Adding Users
+### Day 69 - 高级 - Blog项目第四部分：加入用户（核心项目）
 * [Solution: Blog Capstone Project Part 4](day69/.)
+* [案例: Blog （核心项目） 第4部分](day69/.)
 
 ### Day 70 - Deploying Your Web Application with Heroku
+### Day 70 - 高级 - 使用Heroku部署自己的项目
 * [Solution: Blog Capstone Project for Heroku](day70/.)
+* [案例: Blog （核心项目） Heroku部署](day70/.)
 
 ### Day 71 - Data Exploration with Pandas: College Major v.s. Your Salary
+### Day 71 - 高级 - 使用Pandas进行数据探索：大学专业vs薪水
 * [Solution: Day 71 Notebook](day71/Day71.ipynb)
+* [案例: Notebook](day71/Day71.ipynb)
 * [Solution: Day 71 Extra Credit](day71/Day71ExtraCredit.ipynb)
+* [案例: 额外的学分](day71/Day71ExtraCredit.ipynb)
 
 ### Day 72 - Data Visualisation with Matplotlib: Programming Languages
 * [Solution: Day 72 Notebook](day72/Day72.ipynb)
