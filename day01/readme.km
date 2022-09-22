@@ -1,0 +1,151 @@
+{
+    "root": {
+        "data": {
+            "id": "cn2ow3850ps0",
+            "created": 1663825431455,
+            "text": "课程学习思路"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cn2ox4tnvds0",
+                    "created": 1663825513298,
+                    "text": "课程概括，我们能学到什么"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cn2oxe7z0lc0",
+                    "created": 1663825533754,
+                    "text": "从这里开始"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cn2oxtxccj40",
+                    "created": 1663825567939,
+                    "text": "课程提示和资源下载"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cn2ozhgzce00",
+                    "created": 1663825697557,
+                    "text": "判断自己的程度"
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cn2ozst55m80",
+                    "created": 1663825722237,
+                    "text": "课程目标"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cn2p46q9zw00",
+                            "created": 1663826065995,
+                            "text": "常见问题：使用什么编辑器"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p4mk8gpc0",
+                            "created": 1663826100460,
+                            "text": "python打印到控制台"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p5ggp93c0",
+                            "created": 1663826165548,
+                            "text": "交互练习：print函数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p5xbllb40",
+                            "created": 1663826202245,
+                            "text": "python中字符串操作"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p6qeew400",
+                            "created": 1663826265542,
+                            "text": "交互练习：调试实践"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p71jkukg0",
+                            "created": 1663826289799,
+                            "text": "python中输入函数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p78zlxwo0",
+                            "created": 1663826306006,
+                            "text": "交互练习：输入函数"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p7hamr9c0",
+                            "created": 1663826324087,
+                            "text": "python变量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p7p9c8dc0",
+                            "created": 1663826341423,
+                            "text": "交互练习：变量"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p7umikzs0",
+                            "created": 1663826353103,
+                            "text": "变量命名"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cn2p86wjgww0",
+                            "created": 1663826379832,
+                            "text": "变量命名测验"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cn2p3rh6uq80",
+                    "created": 1663826032794,
+                    "text": "项目实例"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
