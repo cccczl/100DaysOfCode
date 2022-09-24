@@ -1,6 +1,14 @@
 # Day 82 - Professional Portfolio Project - Python Web Development
-## Assignment: Portfolio Website
-A website to show off your skills and the things you've built.
+### Where are the Videos and the Solution Code?
+### 视频和解决方案代码在哪里？
+
+### Assignment: Portfolio Website
+### 投资组合网站
+
+* A website to show off your skills and the things you've built.
+* 一个展示你的技能和你所建造的东西的网站。
+
+
 ## Assignment instructions
 Using what you have learnt about web development, build your own portfolio website.
 

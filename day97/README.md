@@ -1,6 +1,10 @@
 # Day 97 - Professional Portfolio Project - Python Automation
-## Assignment: Custom Automation
-Automate some aspect of your life using Python.
+### Assignment: Custom Automation
+### 定制自动化
+
+* Automate some aspect of your life using Python.
+* 使用 Python 自动化您生活的某些方面。
+
 ## Assignment instructions
 You've learnt about automation with Python and Selenium. It's your turn to get creative and automate some aspect of your life using what you have learnt.
 
