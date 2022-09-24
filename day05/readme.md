@@ -5,7 +5,7 @@
 ### 在 Python 列表中使用 for 循环
 
 ### [Interactive Coding Exercise] Average Height
-【互动编码练习】平均身高
+### 【互动编码练习】平均身高
 
 ### [Interactive Coding Exercise] High Score
 ### 【交互编码练习】高分
