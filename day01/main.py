@@ -32,5 +32,6 @@ while True:
 
 # 使用f-strings的输出使代码可读性更强
 print(f"欢迎你，来自{chengshi}的{xing_ming}.")
+
 print("欢迎你，来自{}的{}.".format(chengshi,xing_ming))
 print("欢迎你，来自"+ chengshi + "的" + xing_ming + ". ")
