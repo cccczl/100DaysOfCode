@@ -31,7 +31,7 @@
 * 我们已经介绍了很多可以用 Python 进行的数学运算。例如round()、地板除法//、PEMDAS 等。这个测验将检查你是否能正确使用所有这些概念。
 
 ### Day 2 Project_ Tip Calculator
-### 第 2 天项目：小费计算器
+### 第 2 天项目：薪水加班计算器
 
 ### You are already in the top 50%
 ### 你已经在前50%
