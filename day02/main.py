@@ -1,14 +1,13 @@
-# Tip Calculator
-#小费计算器
+#薪水计算器
 
-# initialize the variables as empty strings, since input() returns strings
+# 初始化变量为空字符串，因为input()返回字符串
 base_bill = ""
-percentage = ""
-people = ""
+overtime = ""
+double_overtime = ""
 
-print("Welcome to the tip calculator.")
+print("欢迎使用薪水计算器.")
 
-# get the base bill without tip
+# 基础薪水计算
 while True:
     print("What was the total bill?")
     base_bill = input("> $")
