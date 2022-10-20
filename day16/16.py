@@ -27,7 +27,6 @@
 
 
 from prettytable import PrettyTable
-from pyrsistent import l
 
 pkqtable = PrettyTable()
 
