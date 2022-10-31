@@ -1,0 +1,216 @@
+{
+    "root": {
+        "data": {
+            "id": "cnzhz363j9c0",
+            "created": 1667157397225,
+            "text": "自动咖啡机"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cnzhznavy080",
+                    "created": 1667157441050,
+                    "text": "是否开机"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cnzhzu575400",
+                            "created": 1667157455944,
+                            "text": "库存状态"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnzi0nguxiw0",
+                                    "created": 1667157519775,
+                                    "text": "水"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnzi0qdses00",
+                                    "created": 1667157526120,
+                                    "text": "咖啡"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cnzi0s5yw9k0",
+                                    "created": 1667157530001,
+                                    "text": "牛奶"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cnzi00hsq8w0",
+                            "created": 1667157469766,
+                            "text": "钱箱状态"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cnzi06absmw0",
+                            "created": 1667157482375,
+                            "text": "菜单"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnzi0yndgdc0",
+                                    "created": 1667157544114,
+                                    "text": "卡布奇诺",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnzi1e8kptk0",
+                                            "created": 1667157578048,
+                                            "text": "配料"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnzi1gh6rw00",
+                                            "created": 1667157582922,
+                                            "text": "价格"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cnzi12afgo00",
+                                    "created": 1667157552038,
+                                    "text": "拿铁"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnzi1e8kptk0",
+                                            "created": 1667157578048,
+                                            "text": "配料"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnzi1gh6rw00",
+                                            "created": 1667157582922,
+                                            "text": "价格"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cnzi14r750o0",
+                                    "created": 1667157557406,
+                                    "text": "美式咖啡"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnzi1e8kptk0",
+                                            "created": 1667157578048,
+                                            "text": "配料"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnzi1gh6rw00",
+                                            "created": 1667157582922,
+                                            "text": "价格"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cnzi226m3h40",
+                            "created": 1667157630172,
+                            "text": "接受支付"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cnzi2c42ggw0",
+                                    "created": 1667157651786,
+                                    "text": "纸币"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnzi2l0ppd40",
+                                            "created": 1667157671174,
+                                            "text": "1"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnzi2pvdn3c0",
+                                            "created": 1667157681735,
+                                            "text": "5"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnzi2s3vee80",
+                                            "created": 1667157686602,
+                                            "text": "10"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cnzi2gjby1c0",
+                                    "created": 1667157661416,
+                                    "text": "硬币"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnzi2ul1rfk0",
+                                            "created": 1667157691994,
+                                            "text": "0.5"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnzi2xqluiw0",
+                                            "created": 1667157698861,
+                                            "text": "1"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "structure",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
