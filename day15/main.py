@@ -42,14 +42,14 @@ def coin():
 
 
 while is_open:
-    user_inprt = input("请你输入你喜欢的咖啡,latte/cappuccino/macchiatto:>").lower()
-    if user_inprt == "inquire":
+    user_input = input("请你输入你喜欢的咖啡,latte/cappuccino/macchiatto:>").lower()
+    if user_input == "inquire":
         print(f"shui: {stock['water']}ml")
         print(f"kafei: {stock['coffee']}g")
         print(f"niunai: {stock['milk']}ml")
         print(f"营业收入: {purse}¥")
     else:
-        make_coffees = MENU[user_inprt]
+        make_coffees = MENU[user_input]
         print(make_coffees)
         if make_coffees_test(make_coffees["formula"]):
             # coin()
