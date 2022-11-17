@@ -58,7 +58,7 @@ def apply_to_job(link):
         print(f"*** Pretending to click on the \"{button.text}\" button. ***")
     else:
         # if the application requires additional steps, skip it, but to have some feedback
-        print(f"One-step application is not possible for this job.")
+        print("One-step application is not possible for this job.")
 
 
 driver = webdriver.Chrome()

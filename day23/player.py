@@ -27,6 +27,4 @@ class Player(turtle.Turtle):
 
     def reached_finish(self):
         """Returns TRUE if the player has reached the finish line."""
-        if self.ycor() > FINISH_LINE_Y:
-            return True
-        return False
+        return self.ycor() > FINISH_LINE_Y

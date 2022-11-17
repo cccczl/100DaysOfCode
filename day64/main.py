@@ -73,10 +73,8 @@ def check_rating(raw_rating):
     try:
         print(raw_rating)
         rating = float(raw_rating)
-    except ValueError:
+    except (ValueError, TypeError):
         # to avoid using NULL, set the value to 0.0 instead
-        return 0.0
-    except TypeError:
         return 0.0
     else:
         return round(rating, 1)
@@ -163,8 +161,7 @@ def find_movie():
 
 @app.route("/tmdb")
 def add_movie_from_tmdb():
-    movie_api_id = request.args.get("id")
-    if movie_api_id:
+    if movie_api_id := request.args.get("id"):
         url = f"{TMDB_INFO_URL}/{movie_api_id}"
         params = {
             "api_key": config.TMDB_API_KEY,

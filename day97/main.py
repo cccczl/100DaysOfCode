@@ -28,8 +28,8 @@ def find_last_ep(folder):
     # TODO: Needs updating once episode number reaches 1000+
     path = Path(folder)
     # convert the generator object in to a list of .mp3 files
-    file_list = [p for p in path.glob("*.mp3")]
-    last_file = str(file_list[len(file_list) - 1])
+    file_list = list(path.glob("*.mp3"))
+    last_file = str(file_list[-1])
     # return just the last three characters before ".mp3"
     return int(last_file[-7:-4])
 
@@ -54,8 +54,10 @@ def get_episodes_list(rss_url, last_ep, is_intermed=False):
     # add all newer eps into a list
     # deal with the case there are no newer eps
     if newest_ep > last_ep:
-        for i in range(0, newest_ep - last_ep):
-            list_out.append(feed.entries[i].enclosures[0].get("href"))
+        list_out.extend(
+            feed.entries[i].enclosures[0].get("href")
+            for i in range(newest_ep - last_ep)
+        )
 
     # sort the list (older to newer), doesn't matter if empty
     list_out.sort()

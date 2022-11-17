@@ -27,10 +27,7 @@ def is_iss_nearby(pos):
     # de-structure the tuple, for the sake of readability
     iss_lat, iss_long = pos
     # if the ISS is within +5 or -5 degrees of the defined position
-    if abs(MY_LAT - iss_lat) < 5 and abs(MY_LONG - iss_long) < 5:
-        return True
-    # it's not actually necessary to include this line
-    return False
+    return abs(MY_LAT - iss_lat) < 5 and abs(MY_LONG - iss_long) < 5
 
 
 def is_nighttime():
@@ -51,10 +48,7 @@ def is_nighttime():
     now = dt.datetime.utcnow().hour
 
     # true if it's after sunset or before next sunrise
-    if now >= sunset or now <= sunrise:
-        return True
-    # just to be consistent
-    return False
+    return now >= sunset or now <= sunrise
 
 
 # run indefinitely while checking every 60 seconds

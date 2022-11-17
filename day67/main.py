@@ -91,8 +91,7 @@ def home():
 
 @app.route("/post/<int:blog_id>")
 def show_post(blog_id):
-    blog_post = BlogPost.query.get(blog_id)
-    if blog_post:
+    if blog_post := BlogPost.query.get(blog_id):
         return render_template("post.html", post=blog_post, year=get_current_year())
     else:
         return redirect("/")
@@ -105,26 +104,23 @@ def about():
 
 @app.route("/contact.html", methods=["GET", "POST"])
 def contact():
-    # display a different page after a message was submitted
-    if request.method == "POST":
-        message = {
-            "name": request.form["name"],
-            "email": request.form["email"],
-            "phone": request.form["phone"],
-            "message": request.form["message"]
-        }
-        # try to send the message
-        if send_email(message):
-            status = "Success!"
-            text = "Your message has been sent."
-        else:
-            status = "Something went wrong."
-            text = "The message could not be sent."
-        # display the status page
-        return render_template("message.html", status=status, text=text)
-    # display the regular contact page
-    else:
+    if request.method != "POST":
         return render_template("contact.html", year=get_current_year())
+    message = {
+        "name": request.form["name"],
+        "email": request.form["email"],
+        "phone": request.form["phone"],
+        "message": request.form["message"]
+    }
+    # try to send the message
+    if send_email(message):
+        status = "Success!"
+        text = "Your message has been sent."
+    else:
+        status = "Something went wrong."
+        text = "The message could not be sent."
+    # display the status page
+    return render_template("message.html", status=status, text=text)
 
 
 @app.route("/new-post", methods=["GET", "POST"])
@@ -147,9 +143,7 @@ def add_post():
 
 @app.route("/edit/<int:blog_id>", methods=["GET", "POST"])
 def edit_post(blog_id):
-    # find the blog in the DB
-    post = BlogPost.query.get(blog_id)
-    if post:
+    if post := BlogPost.query.get(blog_id):
         # if the post exists, fill in the fields in the form
         form = CreatePostForm(
             title=post.title,
@@ -175,9 +169,7 @@ def edit_post(blog_id):
 
 @app.route("/delete/<int:blog_id>", methods=["GET", "POST"])
 def delete_post(blog_id):
-    post = BlogPost.query.get(blog_id)
-    # if such posts exists, delete it
-    if post:
+    if post := BlogPost.query.get(blog_id):
         db.session.delete(post)
         db.session.commit()
     # redirect to the main page

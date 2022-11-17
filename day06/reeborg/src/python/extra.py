@@ -23,6 +23,6 @@ elif human_language.endswith("cn"):
 elif human_language.endswith("pl"):
     _import_pl(globals())
 else:
-    raise NotImplementedError("Unkown language %s" % human_language)
+    raise NotImplementedError(f"Unkown language {human_language}")
 
 exec(window.extra_editor.getValue())

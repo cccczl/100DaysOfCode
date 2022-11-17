@@ -32,15 +32,11 @@ screen.onkey(snake.down, "Down")
 screen.onkey(snake.left, "Left")
 screen.onkey(snake.right, "Right")
 
-# since there is no proper "game over" condition yet, temporarily setting the game to end after 50 cycles
-cycle = 0
-while cycle < 50:
+for _ in range(50):
     # update the screen
     screen.update()
     # to control the speed, wait for the set amount of time
     time.sleep(wait_time)
     snake.move()
-    cycle += 1
-
 # wait for click before closing the window
 screen.exitonclick()

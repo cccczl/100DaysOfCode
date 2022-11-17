@@ -23,9 +23,7 @@ def get_date():
     # get today's date as a list
     today = dt.datetime.now().strftime("%Y-%m-%d").split("-")
     past_year = int(today[0]) - YEARS_AGO
-    # just replace the year
-    past_date = f"{past_year}-{today[1]}-{today[2]}"
-    return past_date
+    return f"{past_year}-{today[1]}-{today[2]}"
 
 
 def load_site(past_date):

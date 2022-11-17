@@ -62,16 +62,13 @@ while not game_is_over:
         game_is_over = True
 
 # evaluate the final "score"
-if len(revealed_states) == 0:
+if not revealed_states:
     # for simplicity, just a message in the console
     print("You didn't guess a single state.")
 elif len(revealed_states) == states_count:
     print("Well done, you've entered all states.")
 else:
     # if there were any missing states, save them into a new csv
-    missed_states = []
-    for state in all_states:
-        if state not in revealed_states:
-            missed_states.append(state)
+    missed_states = [state for state in all_states if state not in revealed_states]
     pd.DataFrame(missed_states).to_csv(OUTPUT_CSV_FILE)
     print(f"The {len(missed_states)} missing states have been saved to {OUTPUT_CSV_FILE}.")

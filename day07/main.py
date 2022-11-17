@@ -27,10 +27,7 @@ guessed_letter_list = []
 # randomly pick a word, then save it as a list of characters
 chosen_word = list(random.choice(words.word_list))
 # the display list, fill it with "_" for each character
-display = []
-for i in range(len(chosen_word)):
-    display.append("_")
-
+display = ["_" for _ in chosen_word]
 # set conditions to break out of main loop
 game_over = False
 is_winner = False

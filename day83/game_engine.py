@@ -60,22 +60,18 @@ class GameEngine:
         """Evaluates the board and if there is no winner, asks for the next move."""
         # evaluate the board
         winner = self._check_winner()
-        if winner is not None:
-            if winner == -1:
-                print("It's a tie!")
-            else:
-                print(f"{self._players[winner]} wins!")
-        else:
+        if winner is None:
             # ask for the next move, include their defined mark in the prompt for reference
             print(f"{self._players[self._turn]} ({MARKS[self._turn]}) what's your move?")
             new_index = self._get_input()
             # add the new mark to the board
             self._board[new_index] = self._turn
             # switch to the other player
-            if self._turn == 0:
-                self._turn = 1
-            else:
-                self._turn = 0
+            self._turn = 1 if self._turn == 0 else 0
+        elif winner == -1:
+            print("It's a tie!")
+        else:
+            print(f"{self._players[winner]} wins!")
 
     def _get_input(self):
         while True:

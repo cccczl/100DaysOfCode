@@ -57,7 +57,7 @@ def get_news(name):
     """Takes a company name as a STR and returns a LIST of top related articles."""
     # News API docs: https://newsapi.org/docs/get-started
     # get today's date in a specific format
-    today = dt.datetime.today().strftime("%Y-%m-%d")
+    today = dt.datetime.now().strftime("%Y-%m-%d")
     params = {
         "q": f"{name}&",
         "from": f"{today}&",
@@ -98,10 +98,7 @@ if abs(change) >= MIN_CHANGE:
     # compose the message
     message_head = f"{STOCK}: "
     # add a mark depending on the movement
-    if change >= MIN_CHANGE:
-        message_head += "🔺"
-    else:
-        message_head += "🔻"
+    message_head += "🔺" if change >= MIN_CHANGE else "🔻"
     # include the percentage
     message_head += f"{abs(round(change, 1))}%\n"
 

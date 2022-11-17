@@ -20,9 +20,9 @@ DATA_FILE = "data.json"
 def generate_password():
     """Generates a password matching the parameters and copies it to the clipboard."""
     # using list comprehension for practice
-    l_list = [let for let in LETTERS]
-    n_list = [num for num in NUMBERS]
-    s_list = [sym for sym in SYMBOLS]
+    l_list = list(LETTERS)
+    n_list = list(NUMBERS)
+    s_list = list(SYMBOLS)
     password = ""
     for _ in range(DEFAULT_PASS_LENGTH):
         # odds for each character: 60% for a letter, 30% number and 10% symbol
@@ -51,26 +51,20 @@ def add_entry():
         email_fld.get(),
         password_fld.get()
     ]
-    entries_valid = True
-    # check for empty fields
-    for field in new_entry:
-        if field == "":
-            entries_valid = False
-            # no need to check the rest
-            break
+    entries_valid = "" not in new_entry
     if not entries_valid:
         mb.showwarning(title="Warning", message="Please fill out all fields.")
-    else:
-        # ask for confirmation
-        confirm = mb.askokcancel(title=new_entry[0], message="Please confirm the following are correct:\n\n"
-                                                             f"Email/Username: {new_entry[1]}\n"
-                                                             f"Password: {new_entry[2]}\n\n"
-                                                             f"Save entry?")
-        if confirm:
-            write_data(new_entry)
-            # clear all fields except username
-            website_fld.delete(0, tk.END)
-            password_fld.delete(0, tk.END)
+    elif confirm := mb.askokcancel(
+        title=new_entry[0],
+        message="Please confirm the following are correct:\n\n"
+        f"Email/Username: {new_entry[1]}\n"
+        f"Password: {new_entry[2]}\n\n"
+        f"Save entry?",
+    ):
+        write_data(new_entry)
+        # clear all fields except username
+        website_fld.delete(0, tk.END)
+        password_fld.delete(0, tk.END)
 
 
 def write_data(entry_list):
@@ -101,12 +95,9 @@ def load_data():
     try:
         with open(DATA_FILE, "r") as f:
             try:
-                data = json.load(f)
-                return data
-            # in case the file is empty (or contains invalid data)
+                return json.load(f)
             except json.JSONDecodeError:
                 return None
-    # in case the file does not exist
     except FileNotFoundError:
         return None
 
@@ -122,25 +113,20 @@ def search():
             mb.showinfo(title=search_text, message=f"Entry found:\n\n"
                                                    f"Email/Username: {result['email']}\n"
                                                    f"Password: {result['password']}")
-        # in case match was found or there is so valid data file
         else:
             # getting this message each time might get a little annoying after a while
-            mb.showwarning(title=search_text, message=f"No matching entry was found.")
+            mb.showwarning(title=search_text, message="No matching entry was found.")
 
 
 def search_data(name):
     """Takes a STR and searches for it in the data, returns a DICT or None if not found."""
     # use the same function to load the data
     data = load_data()
-    if data is not None:
-        try:
-            found = data.get(name)
-            return found
-        # if there is no match
-        except KeyError:
-            return None
-    # in case there is no file (or it's empty)
-    else:
+    if data is None:
+        return None
+    try:
+        return data.get(name)
+    except KeyError:
         return None
 
 

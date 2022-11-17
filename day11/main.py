@@ -9,10 +9,7 @@ def draw_card(count):
     """Returns a LIST with "count" amount of random cards."""
     # list of card values, infinite amount of each of them
     card_deck = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-    drawn_cards = []
-    for _ in range(count):
-        drawn_cards.append(random.choice(card_deck))
-    return drawn_cards
+    return [random.choice(card_deck) for _ in range(count)]
 
 
 def calculate_score(card_list):
@@ -23,9 +20,7 @@ def calculate_score(card_list):
     temp_card_list.sort(reverse=True)
     score = 0
     # if blackjack, return the score 0
-    if temp_card_list == [11, 10]:
-        return score
-    else:
+    if temp_card_list != [11, 10]:
         score = sum(temp_card_list)
         # deal with aces having a value of 11 or 1, if present it should be the first value in the list
         while score > 21 and temp_card_list[0] == 11:
@@ -34,7 +29,7 @@ def calculate_score(card_list):
             temp_card_list.append(1)
             score = sum(temp_card_list)
             # if there was more than one ace, and the score is still too high, process the next one
-        return score
+    return score
 
 
 def display_score(plyr_list, game_over):
@@ -136,8 +131,7 @@ def play():
     # evaluate the result
     if cpu["has_blackjack"] and not user["has_blackjack"]:
         print("\nDealer has a blackjack, DEALER wins.\n")
-    # not quite sure how this situation should be evaluated, so might as well be a tie
-    elif cpu["has_blackjack"] and user["has_blackjack"]:
+    elif cpu["has_blackjack"]:
         print("\nYou both have a blackjack, it's a tie!\n")
     elif user["has_blackjack"]:
         print("\nYou have a blackjack, YOU win.\n")

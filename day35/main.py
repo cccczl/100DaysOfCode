@@ -37,19 +37,14 @@ if response.status_code != 200:
 # only need the "hourly" data, not the generic location, etc. part
 weather_data = response.json()["hourly"]
 
-rainy_forecast = True
-# check the hourly forecast
-for i in range(TIME_SPAM):
-    # used just for testing, this prints out a simple description of the forecast
-    # print(f"In {i} hour(s): {weather_data[i]['weather'][0]['main']}")
-    # condition id codes listed at https://openweathermap.org/weather-conditions
-    # 2xx: Thunderstorm, 3xx: Drizzle, 5xx: Rain, 6xx: Snow, etc.
-    if int(weather_data[i]["weather"][0]["id"]) < 700:
-        rainy_forecast = True
-        # no need to check the rest
-        break
-
-if rainy_forecast:
+if rainy_forecast := next(
+    (
+        True
+        for i in range(TIME_SPAM)
+        if int(weather_data[i]["weather"][0]["id"]) < 700
+    ),
+    True,
+):
     # Twilio python docs: https://www.twilio.com/docs/sms/quickstart/python
     try:
         client = Client(TWILIO_SID, TWILIO_TOKEN)

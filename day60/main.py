@@ -63,26 +63,23 @@ def about():
 
 @app.route("/contact.html", methods=["GET", "POST"])
 def contact():
-    # display a different page after a message was submitted
-    if request.method == "POST":
-        message = {
-            "name": request.form["name"],
-            "email": request.form["email"],
-            "phone": request.form["phone"],
-            "message": request.form["message"]
-        }
-        # try to send the message
-        if send_email(message):
-            status = "Success!"
-            text = "Your message has been sent."
-        else:
-            status = "Something went wrong."
-            text = "The message could not be sent."
-        # display the status page
-        return render_template("message.html", status=status, text=text)
-    # display the regular contact page
-    else:
+    if request.method != "POST":
         return render_template("contact.html", year=get_current_year())
+    message = {
+        "name": request.form["name"],
+        "email": request.form["email"],
+        "phone": request.form["phone"],
+        "message": request.form["message"]
+    }
+    # try to send the message
+    if send_email(message):
+        status = "Success!"
+        text = "Your message has been sent."
+    else:
+        status = "Something went wrong."
+        text = "The message could not be sent."
+    # display the status page
+    return render_template("message.html", status=status, text=text)
 
 
 @app.route("/post/<int:blog_id>")
@@ -107,10 +104,18 @@ response = requests.get(JSON_URL)
 response.raise_for_status()
 blog_posts = response.json()
 # store posts as objects in a list
-all_posts = []
-for blog_post in blog_posts:
-    all_posts.append(Post(blog_post["id"], blog_post["author"], blog_post["date"], blog_post["title"],
-                          blog_post["subtitle"], blog_post["image_url"], blog_post["body"]))
+all_posts = [
+    Post(
+        blog_post["id"],
+        blog_post["author"],
+        blog_post["date"],
+        blog_post["title"],
+        blog_post["subtitle"],
+        blog_post["image_url"],
+        blog_post["body"],
+    )
+    for blog_post in blog_posts
+]
 
 if __name__ == "__main__":
     app.run(debug=True)

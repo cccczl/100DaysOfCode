@@ -10,23 +10,22 @@ def get_input(choices_list):
     """Gets input from the user and returns it as STR. Only accepts choices from the provided list."""
     while True:
         user_choice = input("> ").lower()
-        if user_choice not in choices_list:
-            # format the options to include in the error message looks a little better
-            # this will also include the "hidden" choices
-            formatted_choices = ""
-            for i in range(len(choices_list)):
-                # for the first option, or if there is only a single option
-                if i == 0:
-                    formatted_choices += f'"{choices_list[i]}"'
-                # for each next, up until the penultimate option
-                elif i < len(choices_list) - 1:
-                    formatted_choices += f', "{choices_list[i]}"'
-                # for the final option
-                else:
-                    formatted_choices += f' or "{choices_list[i]}"'
-            print(f"Invalid choice. Please type {formatted_choices}.")
-        else:
+        if user_choice in choices_list:
             return user_choice
+        # format the options to include in the error message looks a little better
+        # this will also include the "hidden" choices
+        formatted_choices = ""
+        for i in range(len(choices_list)):
+            # for the first option, or if there is only a single option
+            if i == 0:
+                formatted_choices += f'"{choices_list[i]}"'
+            # for each next, up until the penultimate option
+            elif i < len(choices_list) - 1:
+                formatted_choices += f', "{choices_list[i]}"'
+            # for the final option
+            else:
+                formatted_choices += f' or "{choices_list[i]}"'
+        print(f"Invalid choice. Please type {formatted_choices}.")
 
 
 machine_on = True

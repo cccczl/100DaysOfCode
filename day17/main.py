@@ -11,11 +11,16 @@ use_original = False
 question_bank = []
 # fill up the question bank list with Question objects
 if use_original:
-    for dic in data.original_question_data:
-        question_bank.append(Question(dic["text"], dic["answer"]))
+    question_bank.extend(
+        Question(dic["text"], dic["answer"])
+        for dic in data.original_question_data
+    )
+
 else:
-    for dic in data.question_data:
-        question_bank.append(Question(dic["question"], dic["correct_answer"]))
+    question_bank.extend(
+        Question(dic["question"], dic["correct_answer"])
+        for dic in data.question_data
+    )
 
 qb = QuizBrain(question_bank)
 # repeat while there are still questions remaining

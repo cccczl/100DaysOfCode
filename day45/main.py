@@ -13,16 +13,13 @@ def load_site():
     # print(response.encoding)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
-    all_entries = soup.find_all(name="h3", class_="title")
-    return all_entries
+    return soup.find_all(name="h3", class_="title")
 
 
 def sort_entries(entries):
-    # the #1 movie is missing the "1)" part, so just to be safe, strip and re-generate from all entries
-    rank = 1
     output_text = ""
     # reverse the list, a simple sort() won't work here
-    for entry in entries[::-1]:
+    for rank, entry in enumerate(entries[::-1], start=1):
         line = entry.get_text()
         # fix the inconsistencies, e.g. #12, where "12: " is used instead of "12) "
         # might as well do it for all entries, check all possible lengths, i.e. 1), 10) and also 100)
@@ -42,7 +39,6 @@ def sort_entries(entries):
             title = line
         # include the re-generated ranking
         output_text += f"{rank}) {title}\n"
-        rank += 1
     return output_text
 
 

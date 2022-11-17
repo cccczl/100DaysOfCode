@@ -27,15 +27,13 @@ def buy_upgrade():
     prices = [int(price.text.split("-")[1].strip().replace(",", "")) for price in raw_prices if price.text != ""]
 
     # dictionary with upgrades and prices
-    upgrades = {}
-    for n in range(len(prices)):
-        upgrades[prices[n]] = item_ids[n]
-
+    upgrades = {prices[n]: item_ids[n] for n in range(len(prices))}
     # find purchasable upgrades
-    purchasable_upgrades = {}
-    for upgrade_cost, upgrade_id in upgrades.items():
-        if cookies > upgrade_cost:
-            purchasable_upgrades[upgrade_cost] = upgrade_id
+    purchasable_upgrades = {
+        upgrade_cost: upgrade_id
+        for upgrade_cost, upgrade_id in upgrades.items()
+        if cookies > upgrade_cost
+    }
 
     # click on the most expensive purchasable upgrade
     driver.find_element_by_id(purchasable_upgrades[max(purchasable_upgrades)]).click()

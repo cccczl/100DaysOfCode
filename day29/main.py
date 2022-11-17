@@ -20,9 +20,9 @@ SEPARATOR = "\x1f"
 
 def generate_password():
     # using list comprehension for practice
-    l_list = [let for let in LETTERS]
-    n_list = [num for num in NUMBERS]
-    s_list = [sym for sym in SYMBOLS]
+    l_list = list(LETTERS)
+    n_list = list(NUMBERS)
+    s_list = list(SYMBOLS)
     password = ""
     for _ in range(DEFAULT_PASS_LENGTH):
         # odds for each character: 60% for a letter, 30% number and 10% symbol
@@ -51,26 +51,20 @@ def add_entry():
         email_fld.get(),
         password_fld.get()
     ]
-    entries_valid = True
-    # check for empty fields
-    for field in new_entry:
-        if field == "":
-            entries_valid = False
-            # no need to check the rest
-            break
+    entries_valid = "" not in new_entry
     if not entries_valid:
         mb.showwarning(title="Warning", message="Please fill out all fields.")
-    else:
-        # ask for confirmation
-        confirm = mb.askokcancel(title=new_entry[0], message="Please confirm the following are correct:\n\n"
-                                                             f"Email/Username: {new_entry[1]}\n"
-                                                             f"Password: {new_entry[2]}\n\n"
-                                                             f"Save entry?")
-        if confirm:
-            write_data(new_entry)
-            # clear all fields except username
-            website_fld.delete(0, tk.END)
-            password_fld.delete(0, tk.END)
+    elif confirm := mb.askokcancel(
+        title=new_entry[0],
+        message="Please confirm the following are correct:\n\n"
+        f"Email/Username: {new_entry[1]}\n"
+        f"Password: {new_entry[2]}\n\n"
+        f"Save entry?",
+    ):
+        write_data(new_entry)
+        # clear all fields except username
+        website_fld.delete(0, tk.END)
+        password_fld.delete(0, tk.END)
 
 
 def write_data(entry_list):

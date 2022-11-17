@@ -33,19 +33,13 @@ blueprint = []
 
 # add a placeholder "l" for each letter, unless the input was 0
 if nr_letters > 0:
-    for i in range(nr_letters):
-        blueprint.append("l")
-
+    blueprint.extend("l" for _ in range(nr_letters))
 # and a placeholder "s" for each symbol
 if nr_symbols > 0:
-    for i in range(nr_symbols):
-        blueprint.append("s")
-
+    blueprint.extend("s" for _ in range(nr_symbols))
 # and a placeholder "n" for each number
 if nr_numbers > 0:
-    for i in range(nr_numbers):
-        blueprint.append("n")
-
+    blueprint.extend("n" for _ in range(nr_numbers))
 # the blueprint list should look something like this now: ["l", "l", "l", "s", "s", "n", "n"]
 # for "Hard Level", shuffle the placeholder elements in the blueprint
 # for "Easy Level", leave as is
@@ -59,12 +53,11 @@ for placeholder in blueprint:
     if placeholder == "l":
         # the tedious way: password += letters[random.randint(0, len(letters) - 1)]
         password += random.choice(letters)
-    elif placeholder == "s":
-        password += random.choice(symbols)
-    # not using "else" here, since it might be less secure
     elif placeholder == "n":
         password += random.choice(numbers)
 
+    elif placeholder == "s":
+        password += random.choice(symbols)
 # print the result, unless the inputs were all "0"
 if len(password) > 0:
     print(f"Here is your password: {password}")

@@ -8,18 +8,13 @@ OUTPUT_FOLDER = "./Output/ReadyToSend/"
 def load_template(text_file):
     """Takes a text file and returns its content as a STR."""
     with open(text_file, mode="r") as file:
-        letter_template = file.read()
-        return letter_template
+        return file.read()
 
 
 def load_names(text_file):
     """Takes a text file and returns its lines in a LIST of STRs."""
     with open(text_file, mode="r") as file:
-        names = []
-        for line in file:
-            # remove the new line character
-            names.append(line.strip("\n"))
-        return names
+        return [line.strip("\n") for line in file]
 
 
 def save_letter(content, file_name):

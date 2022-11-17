@@ -75,8 +75,7 @@ def search():
     # check if location data was provided
     if "loc" in request.args:
         location = request.args.get("loc").capitalize()
-        matches = Cafe.query.filter_by(location=location).all()
-        if matches:
+        if matches := Cafe.query.filter_by(location=location).all():
             return jsonify(cafes=[cafe.to_dict() for cafe in matches])
         else:
             return jsonify(error={"Not Found": "Sorry, we don't have a cafe at that location."})
@@ -110,10 +109,7 @@ def add_cafe():
 
 @app.route("/update-price/<int:cafe_id>", methods=["PATCH"])
 def update_cafe(cafe_id):
-    # find the cafe in the DB, returns None in case it doesn't exist
-    cafe = Cafe.query.get(cafe_id)
-    # should evaluate as "truthy", unless None
-    if cafe:
+    if cafe := Cafe.query.get(cafe_id):
         # get the fields from the form and update the DB
         cafe.coffee_price = request.args.get("new_price")
         db.session.commit()
@@ -127,8 +123,7 @@ def update_cafe(cafe_id):
 def remove_cafe(cafe_id):
     # verify the authorization, it should be sent in the header
     if request.headers.get("api-key") == SECRET_API_KEY["api-key"]:
-        cafe = Cafe.query.get(cafe_id)
-        if cafe:
+        if cafe := Cafe.query.get(cafe_id):
             db.session.delete(cafe)
             db.session.commit()
             return jsonify(response={"Success": "Successfully removed the cafe."}), 200

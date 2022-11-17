@@ -42,9 +42,9 @@ def home():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # check if email already if DB
-        found_user = User.query.filter_by(email=request.form.get("email")).first()
-        if found_user:
+        if found_user := User.query.filter_by(
+            email=request.form.get("email")
+        ).first():
             # set message to display and redirect to the login page
             flash("You've already signed up with that email, log in instead!")
             return redirect("/login")
@@ -66,20 +66,19 @@ def register():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        # try to find the email in the DB
-        found_user = User.query.filter_by(email=request.form.get("email")).first()
-        if found_user:
-            # verify the password
-            verified = check_password_hash(pwhash=found_user.password, password=request.form.get("password"))
-            if verified:
+        if found_user := User.query.filter_by(
+            email=request.form.get("email")
+        ).first():
+            if verified := check_password_hash(
+                pwhash=found_user.password,
+                password=request.form.get("password"),
+            ):
                 # use the Flask login manager
                 login_user(found_user)
                 return redirect("/secrets")
-            # incorrect password
             else:
                 flash("Password incorrect, please try again.")
                 return redirect("/login")
-        # if email does not exist in the DB
         else:
             flash("Email not found, please try again.")
             return redirect("/login")

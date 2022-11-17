@@ -224,9 +224,7 @@ def add_post():
 @app.route("/edit/<int:blog_id>", methods=["GET", "POST"])
 @admin_only
 def edit_post(blog_id):
-    # find the blog in the DB
-    post = BlogPost.query.get(blog_id)
-    if post:
+    if post := BlogPost.query.get(blog_id):
         # if the post exists, fill in the fields in the form
         post_form = forms.CreatePostForm(
             title=post.title,
@@ -253,9 +251,7 @@ def edit_post(blog_id):
 @app.route("/delete/<int:blog_id>", methods=["GET", "POST"])
 @admin_only
 def delete_post(blog_id):
-    post = BlogPost.query.get(blog_id)
-    # if such posts exists, delete it
-    if post:
+    if post := BlogPost.query.get(blog_id):
         db.session.delete(post)
         db.session.commit()
     # redirect to the main page
@@ -266,9 +262,9 @@ def delete_post(blog_id):
 def register():
     register_form = forms.RegisterForm()
     if register_form.validate_on_submit():
-        # check if email already if DB
-        found_user = User.query.filter_by(email=register_form.email.data).first()
-        if found_user:
+        if found_user := User.query.filter_by(
+            email=register_form.email.data
+        ).first():
             # set message to display and redirect to the login page
             flash("You've already signed up with that email, log in instead!")
             return redirect("/login")
@@ -294,20 +290,18 @@ def register():
 def login():
     login_form = forms.LoginForm()
     if login_form.validate_on_submit():
-        # try to find the email in the DB
-        found_user = User.query.filter_by(email=login_form.email.data).first()
-        if found_user:
-            # verify the password
-            verified = check_password_hash(pwhash=found_user.password, password=login_form.password.data)
-            if verified:
+        if found_user := User.query.filter_by(
+            email=login_form.email.data
+        ).first():
+            if verified := check_password_hash(
+                pwhash=found_user.password, password=login_form.password.data
+            ):
                 # use the Flask login manager
                 login_user(found_user)
                 return redirect("/")
-            # incorrect password
             else:
                 flash("Password incorrect, please try again.")
                 return redirect("/login")
-        # if email does not exist in the DB
         else:
             flash("Email not found, please try again.")
             return redirect("/login")

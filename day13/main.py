@@ -141,11 +141,7 @@ print()
 # ====DEBUGGED============================
 
 def mutate(a_list):
-    b_list = []
-    for item in a_list:
-        new_item = item * 2
-        # fixed the indentation so this gets executed when it was intended
-        b_list.append(new_item)
+    b_list = [item * 2 for item in a_list]
     print(b_list)
 
 

@@ -10,7 +10,7 @@ def get_input():
     while True:
         text = input("> ").upper()
         if text == "":
-            print(f"Please enter a word.")
+            print("Please enter a word.")
         else:
             return text
 
@@ -28,11 +28,7 @@ while True:
     if word == "!QUIT":
         break
 
-    # using list comprehension, ignore anything other than letters
-    output = [codes_dict[char] for char in word if char in codes_dict]
-
-    # print the result in a more human friendly format
-    if len(output) > 0:
+    if output := [codes_dict[char] for char in word if char in codes_dict]:
         print(" ".join(output))
 
 print("Goodbye.")

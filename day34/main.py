@@ -6,10 +6,10 @@ from quiz_brain import QuizBrain
 from ui import QuizInterface
 
 
-question_bank = []
-# fill up the question bank list with Question objects
-for dic in data.load_data():
-    question_bank.append(Question(dic["question"], dic["correct_answer"]))
+question_bank = [
+    Question(dic["question"], dic["correct_answer"])
+    for dic in data.load_data()
+]
 
 # initialize the quiz brain
 qb = QuizBrain(question_bank)

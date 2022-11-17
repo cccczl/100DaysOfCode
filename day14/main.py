@@ -36,20 +36,22 @@ def play():
 
         # evaluate the choice
         # this doesn't seem to be the case now, but just in case changes are made to the data in the future
-        if dict_a["follower_count"] == dict_b["follower_count"]:
-            # unclear what to do when their numbers are identical, so just accept anything as correct
+        if (
+            dict_a["follower_count"] != dict_b["follower_count"]
+            and dict_a["follower_count"] > dict_b["follower_count"]
+            and choice == "A"
+            or dict_a["follower_count"] != dict_b["follower_count"]
+            and dict_a["follower_count"] <= dict_b["follower_count"]
+            and dict_a["follower_count"] < dict_b["follower_count"]
+            and choice == "B"
+            or dict_a["follower_count"] == dict_b["follower_count"]
+        ):
             score += 1
-        elif dict_a["follower_count"] > dict_b["follower_count"]:
-            if choice == "A":
-                score += 1
-            else:
-                is_game_over = True
-        elif dict_a["follower_count"] < dict_b["follower_count"]:
-            if choice == "B":
-                score += 1
-            else:
-                is_game_over = True
-
+        elif (
+            dict_a["follower_count"] > dict_b["follower_count"]
+            or dict_a["follower_count"] < dict_b["follower_count"]
+        ):
+            is_game_over = True
         # the B entry becomes the A entry for the next round
         if not is_game_over:
             dict_a = dict_b
@@ -79,14 +81,11 @@ def get_input(choices_list):
     """Gets input from the user, returns it as STR. Only accepts choices from the provided list."""
     while True:
         user_choice = input("> ").upper()
-        if user_choice not in choices_list:
-            # add quotation marks around the choices, so the error message looks a little better
-            formatted_list = []
-            for char in choices_list:
-                formatted_list.append(f"\"{char}\"")
-            print(f"Invalid choice. Please type {' or '.join(formatted_list)}.")
-        else:
+        if user_choice in choices_list:
             return user_choice
+            # add quotation marks around the choices, so the error message looks a little better
+        formatted_list = [f'\"{char}\"' for char in choices_list]
+        print(f"Invalid choice. Please type {' or '.join(formatted_list)}.")
 
 
 # main loop

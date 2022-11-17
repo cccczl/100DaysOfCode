@@ -20,8 +20,8 @@ HEIGHT = 600
 wait_time = (11 - GAME_SPEED) / 30
 # calculate the borders, with the snake's width (20) being the size of a "grid"
 # allow half a width for leeway, for possible issues caused by rounding (as below)
-x_range = int(WIDTH / 2) - 10
-y_range = int(HEIGHT / 2) - 10
+x_range = WIDTH // 2 - 10
+y_range = HEIGHT // 2 - 10
 
 
 # screen setup

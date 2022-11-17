@@ -12,8 +12,8 @@ from scoreboard import Scoreboard
 WIDTH = 800
 HEIGHT = 600
 # calculate the borders, minus a little for tolerance
-x_range = int(WIDTH / 2) - 55
-y_range = int(HEIGHT / 2) - 20
+x_range = WIDTH // 2 - 55
+y_range = HEIGHT // 2 - 20
 
 # screen setup
 screen = turtle.Screen()

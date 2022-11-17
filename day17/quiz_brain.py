@@ -19,9 +19,7 @@ class QuizBrain:
 
     def still_has_questions(self):
         """Checks if there are questions remaining and returns a BOOL."""
-        if self.question_number < len(self.questions_list):
-            return True
-        return False
+        return self.question_number < len(self.questions_list)
 
     def check_answer(self, choice, answer):
         """Takes two STR and compares them, then prints the result and score."""

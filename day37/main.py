@@ -51,9 +51,10 @@ def add_value(quantity):
     graph_url = f"{PIXELA_API_URL}/{config.PIXELA_USERNAME}/graphs/graph1"
     # get and format the date the same way as in Day 36
     params = {
-        "date": dt.datetime.today().strftime("%Y%m%d"),
-        "quantity": str(quantity)
+        "date": dt.datetime.now().strftime("%Y%m%d"),
+        "quantity": str(quantity),
     }
+
     headers = {
         "X-USER-TOKEN": config.PIXELA_TOKEN
     }

@@ -25,7 +25,7 @@ def list_operations():
     text = "Available operations: "
     for key in operations:
         # this will also add an extra space at the end of the string, but it doesn't really matter
-        text += key + " "
+        text += f"{key} "
     print(text)
 
 
@@ -38,11 +38,10 @@ def get_input(is_symbol=False):
             sym = input("> ")
             if sym in operations:
                 return sym
-            else:
-                print(f"{sym} is not a valid option.")
-                # remind the user what's available
-                list_operations()
-                print("Please select one of the above.")
+            print(f"{sym} is not a valid option.")
+            # remind the user what's available
+            list_operations()
+            print("Please select one of the above.")
     # else get a number
     while True:
         num_string = input("> ")

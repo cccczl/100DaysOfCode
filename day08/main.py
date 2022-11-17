@@ -41,7 +41,7 @@ while True:
     direction = ""
     while True:
         direction = input("> ").lower()
-        if direction == "encode" or direction == "decode":
+        if direction in ["encode", "decode"]:
             break
         else:
             print("Invalid choice. Please enter \"encode\" or \"decode\".")

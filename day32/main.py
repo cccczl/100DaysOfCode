@@ -22,11 +22,16 @@ SUBJECT_TEXT = "Happy Birthday [RECEIVER_NAME]!"
 def load_birthdays():
     """Loads the CSV file and returns the contents as a LIST."""
     df = pd.read_csv(BIRTHDAYS_CSV)
-    # using list comprehension to create a list of dictionaries
-    # "year" isn't actually needed, but including it for completeness' sake,
-    # could be useful to calculate the person's age
-    birthdays = [{"name": row[0], "email": row[1], "year": row[2], "month": row[3], "day": row[4]} for row in df.values]
-    return birthdays
+    return [
+        {
+            "name": row[0],
+            "email": row[1],
+            "year": row[2],
+            "month": row[3],
+            "day": row[4],
+        }
+        for row in df.values
+    ]
 
 
 def generate_email(details):

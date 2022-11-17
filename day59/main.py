@@ -55,10 +55,18 @@ response = requests.get(JSON_URL)
 response.raise_for_status()
 blog_posts = response.json()
 # store posts as objects in a list
-all_posts = []
-for blog_post in blog_posts:
-    all_posts.append(Post(blog_post["id"], blog_post["author"], blog_post["date"], blog_post["title"],
-                          blog_post["subtitle"], blog_post["image_url"], blog_post["body"]))
+all_posts = [
+    Post(
+        blog_post["id"],
+        blog_post["author"],
+        blog_post["date"],
+        blog_post["title"],
+        blog_post["subtitle"],
+        blog_post["image_url"],
+        blog_post["body"],
+    )
+    for blog_post in blog_posts
+]
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -50,9 +50,7 @@ def play(a, b, diff, cheat_mode):
 def choose_difficulty(att_dict):
     """Takes a dictionary and returns the key chosen by the user."""
     # just some simple formatting, won't be grammatically correct if there are more than 2 keys
-    choices_list = []
-    for key in att_dict:
-        choices_list.append(f"\"{key}\"")
+    choices_list = [f'\"{key}\"' for key in att_dict]
     print(f"Choose a difficulty. Type {' or '.join(choices_list)}:")
     # make sure the user chooses a valid option
     while True:
@@ -80,11 +78,15 @@ def get_integer(a, b):
 
 
 # main loop
+# to avoid hard-coding them, set the options for the game here
+# REQUIREMENT: INT, and "num_to" >= "num_from" (negative numbers are acceptable!)
+num_from = -50
+num_to = 50
+# enable "testing" mode
+# REQUIREMENT: BOOL
+testing_mode = False
+
 while True:
-    # to avoid hard-coding them, set the options for the game here
-    # REQUIREMENT: INT, and "num_to" >= "num_from" (negative numbers are acceptable!)
-    num_from = -50
-    num_to = 50
     # there need to be at least 2 keys, or having to "choose" doesn't make sense, possible to add more
     # REQUIREMENT: the values have to be an INT > 0
     attempts_dict = {
@@ -92,10 +94,6 @@ while True:
         "hard": 5,
         "extreme": 3,
     }
-    # enable "testing" mode
-    # REQUIREMENT: BOOL
-    testing_mode = False
-
     print(art.logo)
     print("Welcome to the Number Guessing Game!\n")
     print(f"I'm thinking of a number between {num_from} and {num_to}.")

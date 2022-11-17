@@ -10,10 +10,7 @@ def paint(cols, rows):
     """Takes number of columns and rows as INT and paints a dot of random color at each position."""
     # extract the colors
     extracted_colors = colorgram.extract("image.jpg", 30)
-    color_list = []
-    for col in extracted_colors:
-        color_list.append(col.rgb)
-
+    color_list = [col.rgb for col in extracted_colors]
     # set up the brush
     brush = turtle.Turtle()
     brush.shape("circle")
@@ -32,8 +29,8 @@ def paint(cols, rows):
     # initial offset by half of the distance between each dot
     x_pos = int(width / -2 + x_offset / 2)
     y_pos = int(height / -2 + y_offset / 2)
-    for _ in range(0, rows):
-        for __ in range(0, cols):
+    for _ in range(rows):
+        for __ in range(cols):
             brush.setx(x_pos)
             brush.sety(y_pos)
             brush.dot(30, random.choice(color_list))

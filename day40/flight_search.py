@@ -63,7 +63,7 @@ class FlightSearch:
             try:
                 data = response.json()["data"][0]
             except IndexError:
-                print(f"No flight found even with a stopover.")
+                print("No flight found even with a stopover.")
                 return None
             else:
                 flight = fd.FlightData(

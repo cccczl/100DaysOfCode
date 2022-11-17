@@ -42,17 +42,11 @@ def main():
     while True:
         # get input from the user
         input_text = get_input()
-        converted_text = ""
-
-        # process characters
-        for char in input_text:
-            # only add valid convertible characters, ignore everything else
-            if char in morse_chart:
-                # add a space after each character
-                converted_text += morse_chart[char] + " "
-
-        # check for empty output
-        if len(converted_text) > 0:
+        if converted_text := "".join(
+            f"{morse_chart[char]} "
+            for char in input_text
+            if char in morse_chart
+        ):
             print(f"Your input in morse code: {converted_text}")
         else:
             print("The input did not contain any convertible character.")
